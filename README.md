@@ -70,5 +70,11 @@ pip install -r requirements.txt
 - **[Quart](https://quart.palletsprojects.com/)** - A Python web microframework
 - **TailwindCSS** - For beautiful and responsive designs
 
+## ❤️ Support Us
+If you love this project and want to support its development, consider buying us a coffee or leaving a tip:
+- [☕ Trakteer](https://trakteer.id/rozhak_official/tip)
+- [💸 PayPal](https://paypal.me/rozhak9)
+- [🎁 Saweria](https://saweria.co/rozhak9)
+
 ## License 📜
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
