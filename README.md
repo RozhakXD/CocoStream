@@ -4,9 +4,9 @@
 Simplify your link conversion with **CocoStream**, an intuitive and powerful web application designed to convert Cocobox links into downloadable URLs. Built using **Quart** for the backend, it delivers fast, lightweight, and asynchronous performance.
 
 ## Features ✨
+- 🖼️ **Modern UI**: Clean and responsive design for a seamless user experience.
 - 🔄 **Real-Time Processing**: Asynchronous backend ensures smooth and efficient operations.
 - 🚀 **Fast Conversion**: Quickly transform CocoBox links into downloadable URLs.
-- 🖼️ **Modern UI**: Clean and responsive design for a seamless user experience.
 - 🌙 **Dark Mode**: Optimized for comfortable usage in both light and dark environments.
 
 ## Project Structure 📂
@@ -28,7 +28,6 @@ CocoStream
 ```
 
 ## Requirements 📋
-
 Ensure you have the following installed:
 
 - **Python 3.7+** 🐍
@@ -72,5 +71,4 @@ pip install -r requirements.txt
 - **TailwindCSS** - For beautiful and responsive designs
 
 ## License 📜
-
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
