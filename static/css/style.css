@@ -1,0 +1,25 @@
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.notification {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-20px);
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    border-radius: 8px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}

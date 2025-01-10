@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>CocoStream - Simplify Your Link Conversion</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 dark:from-blue-700 dark:via-blue-800 dark:to-blue-900 py-4 md:py-6">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-xl md:text-3xl font-extrabold text-white">CocoStream</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="text-white hover:underline">Home</a></li>
+                    <li><a href="#" class="text-white hover:underline">Features</a></li>
+                    <li><a href="#" class="text-white hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-8 md:py-12 px-4 space-y-12 flex-grow">
+        <!-- Conversion Section -->
+        <section class="bg-gradient-to-r from-gray-50 via-gray-100 to-gray-200 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 rounded-lg p-6 md:p-8">
+            <h2 class="text-2xl md:text-4xl font-extrabold text-center mb-4 md:mb-6">Convert Your Cocobox Links</h2>
+            <p class="text-base md:text-lg text-center mb-6 md:mb-8">Paste your link below and instantly get a downloadable URL.</p>
+            <form id="convertForm">
+                <div class="flex flex-col gap-4 md:flex-row md:items-center">
+                    <input type="text" id="linkInput" placeholder="Enter your CocoBox link here" class="w-full p-3 md:p-4 text-base md:text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:placeholder-gray-400">
+                    <button type="submit"class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg text-base md:text-lg font-semibold hover:from-blue-600 hover:to-blue-700 focus:ring-4 focus:ring-blue-400">Convert Link</button>
+                </div>
+            </form>
+        </section>
+    
+        <!-- Converted Links Section -->
+        <section>
+            <h3 class="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8">Your Converted Links</h3>
+            <div id="convertedLinks" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"></div>
+        </section>
+    </main>
+
+    <!-- Floating Notification -->
+    <div id="notification" class="notification hidden"></div>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-800 to-gray-900 text-gray-400 py-4 md:py-6">
+        <div class="container mx-auto text-center">
+            <p class="text-sm md:text-base">&copy; 2025 CocoStream. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</body>
+</html>
