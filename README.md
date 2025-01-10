@@ -67,8 +67,8 @@ pip install -r requirements.txt
 ![Image](https://github.com/user-attachments/assets/f53b1274-54b5-4fb7-9200-e9856c5d591d)
 
 ## Built With 🛠️
-- **[Quart](https://quart.palletsprojects.com/)** - A Python web microframework
 - **TailwindCSS** - For beautiful and responsive designs
+- **[Quart](https://quart.palletsprojects.com/)** - A Python web microframework
 
 ## ❤️ Support Us
 If you love this project and want to support its development, consider buying us a coffee or leaving a tip:
